@@ -35,6 +35,11 @@
 <!-- Document Title
 ============================================= -->
 <title>WG Art | Estúdio de Design</title>
+<style>
+.portfolio--img { overflow: hidden; }
+.portfolio--img img { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; transition: transform 0.4s; }
+.portfolio--img:hover img { transform: scale(1.03); }
+</style>
 </head>
 
 <body class="body-scroll">
@@ -113,6 +118,58 @@
     <!-- .container end -->
 </section>
 <!-- #hero12 end -->
+
+<!-- Marcas / Clients
+============================================= -->
+<section id="marcas" class="section pt-60 pb-60" style="background: #0a0a0a;">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+                <div class="heading text-center mb-40" style="color: #fff;">
+                    <h5 style="font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); font-weight: 500; margin: 0;">Marcas que já passaram por aqui</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="marquee-container" style="overflow: hidden; padding: 30px 0; position: relative;">
+        <div class="marquee-track" style="display: flex; gap: 80px; animation: marquee 40s linear infinite; width: max-content;">
+            <!-- Logos repeated 3x for seamless loop -->
+            <img src="assets/images/clients/vw.png" alt="Volkswagen" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+            <img src="assets/images/clients/coca.png" alt="Coca-Cola" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+            <img src="assets/images/clients/movida.png" alt="Movida" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+            <img src="assets/images/clients/binance.png" alt="Binance" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+            <img src="assets/images/clients/brasileirao.png" alt="Brasileirão" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+            <img src="assets/images/clients/fifa.png" alt="FIFA" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+            <img src="assets/images/clients/kovi.png" alt="Kovi" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+            <img src="assets/images/clients/maracana.png" alt="Maracanã" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+            <img src="assets/images/clients/bmb.png" alt="BMB" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+            <img src="assets/images/clients/vamos.png" alt="Grupo Vamos" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+            <img src="assets/images/clients/moover.png" alt="Moover" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1); transition: opacity 0.3s;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0.45" />
+
+            <!-- duplicate for seamless loop -->
+            <img src="assets/images/clients/vw.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+            <img src="assets/images/clients/coca.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+            <img src="assets/images/clients/movida.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+            <img src="assets/images/clients/binance.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+            <img src="assets/images/clients/brasileirao.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+            <img src="assets/images/clients/fifa.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+            <img src="assets/images/clients/kovi.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+            <img src="assets/images/clients/maracana.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+            <img src="assets/images/clients/bmb.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+            <img src="assets/images/clients/vamos.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+            <img src="assets/images/clients/moover.png" alt="" style="height: 50px; opacity: 0.45; filter: brightness(0) invert(1);" />
+        </div>
+    </div>
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</section>
+<!-- #marcas end -->
+
 <!-- Feature #1 
 ============================================= -->
 <section id="feature" class="section feature feature-1 bg-white text-center">
@@ -196,136 +253,127 @@
 </section>
 <!-- #feature  end -->
 
-<!-- Portfolio #1
+
+<!-- Portfolio (Cases)
 ============================================= -->
-<section id="portfolio" class="section portfolio portfolio-grid portfolio-2 pb-70">
+<section id="portfolio" class="section portfolio portfolio-grid portfolio-2 pt-70 pb-70">
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
                 <div class="heading text-center mb-70">
                     <h2 class="heading--title">Portfólio</h2>
-                    <p class="heading--desc"> Veja alguns de nossos trabalhos. Para saber mais siga <a href="" target="_blank" ><span> @wgbranding </span> </a> no instagram. </p>
-                    </div>
+                    <p class="heading--desc">Alguns dos projetos que tivemos o prazer de criar. Para saber mais siga <a href="https://instagram.com/wgbranding" target="_blank"><span>@wgbranding</span></a> no Instagram.</p>
+                </div>
             </div>
-            <!-- .col-md-6 end -->
         </div>
-        <!-- .row end -->
-        <div class="row">
-			<!-- Projects Filter
-			============================================= -->
-			<div class="col-xs-12 col-sm-12 col-md-12 portfolio-filter">
-				<ul class="list-inline">
-					<li><a class="active-filter" href="#" data-filter="*">Branding</a></li> 
-					<li><a href="#" data-filter=".filter-building">Flyers</a></li>   
-					<li><a href="#" data-filter=".filter-planning">Identidade Visual</a></li>
-				</ul>
-			</div>
-			<!-- .projects-filter end --> 
-		</div>	
-		<!-- .row end --> 
+
         <div id="portfolio-all" class="row">
-            <!-- Portfolio Item #1 -->
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item filter-building">
-                    <div class="portfolio--img">
-                        <img src="assets/images/portfolio/constructions/1.png" alt="portfolio image" />
-                        <div class="portfolio--hover">
-                            <div class="portfolio--meta">
-                                <div class="portfolio--zoom"><a class="img-gallery-item" href="assets/images/portfolio/constructions/full/1.png"></a></div>
-								<h6><a href="#">Branding TBC Produções</a></h6>
-                            </div>
-                        </div>
-                        <!-- .portfolio-hover end -->
-                    </div>
-                    <!-- .portfolio-img end -->
-            </div>
-            <!-- .portfolio-item end -->
 
-            <!-- Portfolio Item #2 -->
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item filter-construction">
-                    <div class="portfolio--img">
-                        <img src="assets/images/portfolio/constructions/2.png" alt="portfolio image" />
-                        <div class="portfolio--hover">
-                            <div class="portfolio--meta">
-                                
-                                <div class="portfolio--zoom"><a class="img-gallery-item" href="assets/images/portfolio/constructions/full/2.png"></a></div>
-								<h6><a href="#">Branding Pink Belt</a></h6>
+            <!-- Case 1: Gastrô -->
+            <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item" style="margin-bottom: 30px;">
+                <a href="case-gastro.html" style="text-decoration: none; display: block;">
+                    <div class="portfolio--img" style="position: relative; overflow: hidden;">
+                        <img src="assets/images/portfolio/cases/gastro.jpg" alt="Case Gastrô" style="width: 100%; display: block;" />
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent 60%); opacity: 0; transition: opacity 0.4s; display: flex; align-items: flex-end; padding: 24px;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+                            <div>
+                                <p style="color: #fff; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 6px; opacity: 0.7;">Identidade Visual</p>
+                                <h4 style="color: #fff; margin: 0; font-size: 22px;">Gastrô</h4>
                             </div>
                         </div>
-                        <!-- .portfolio-hover end -->
                     </div>
-                    <!-- .portfolio-img end -->
+                    <div style="padding: 18px 0;">
+                        <p style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #999; margin-bottom: 6px;">Identidade Visual</p>
+                        <h4 style="margin: 0 0 6px; font-size: 18px; color: #1a1a1a;">Gastrô</h4>
+                        <p style="font-size: 13px; color: #666; margin: 0;">Identidade visual para evento premium de gastronomia no VillageMall Rio.</p>
+                    </div>
+                </a>
             </div>
-            <!-- .portfolio-item end -->
 
-            <!-- Portfolio Item #3 -->
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item filter-construction">
-                    <div class="portfolio--img">
-                        <img src="assets/images/portfolio/constructions/3.png" alt="portfolio image" />
-                        <div class="portfolio--hover">
-                            <div class="portfolio--meta">
-                                <div class="portfolio--zoom"><a class="img-gallery-item" href="assets/images/portfolio/constructions/full/3.png"></a></div>
-								<h6><a href="#">Branding DJ Gabriel do Borel</a></h6>
+            <!-- Case 2: Coca-Cola × Maracanã -->
+            <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item" style="margin-bottom: 30px;">
+                <a href="case-coca-cola.html" style="text-decoration: none; display: block;">
+                    <div class="portfolio--img" style="position: relative; overflow: hidden;">
+                        <img src="assets/images/portfolio/cases/coca-cola.jpg" alt="Case Coca-Cola" style="width: 100%; display: block;" />
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent 60%); opacity: 0; transition: opacity 0.4s; display: flex; align-items: flex-end; padding: 24px;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+                            <div>
+                                <p style="color: #fff; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 6px; opacity: 0.7;">Ativação</p>
+                                <h4 style="color: #fff; margin: 0; font-size: 22px;">Coca-Cola × Maracanã</h4>
                             </div>
                         </div>
-                        <!-- .portfolio-hover end -->
                     </div>
-                    <!-- .portfolio-img end -->
+                    <div style="padding: 18px 0;">
+                        <p style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #999; margin-bottom: 6px;">Ativação</p>
+                        <h4 style="margin: 0 0 6px; font-size: 18px; color: #1a1a1a;">Coca-Cola × Maracanã</h4>
+                        <p style="font-size: 13px; color: #666; margin: 0;">Ativação visual no templo do futebol brasileiro para Coca-Cola Zero.</p>
+                    </div>
+                </a>
             </div>
-            <!-- .portfolio-item end -->
 
-            <!-- Portfolio Item #4 -->
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item filter-planning">
-                    <div class="portfolio--img">
-                        <img src="assets/images/portfolio/constructions/4.png" alt="portfolio image" />
-                        <div class="portfolio--hover">
-                            <div class="portfolio--meta">
-                                <div class="portfolio--zoom"><a class="img-gallery-item" href="assets/images/portfolio/constructions/full/4.png"></a></div>
-                                 <h6>Identidade Visual Material Gráfico Festa Sorria</h6>
+            <!-- Case 3: Movida -->
+            <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item" style="margin-bottom: 30px;">
+                <a href="case-movida.html" style="text-decoration: none; display: block;">
+                    <div class="portfolio--img" style="position: relative; overflow: hidden;">
+                        <img src="assets/images/portfolio/cases/movida.jpg" alt="Case Movida" style="width: 100%; display: block;" />
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent 60%); opacity: 0; transition: opacity 0.4s; display: flex; align-items: flex-end; padding: 24px;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+                            <div>
+                                <p style="color: #fff; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 6px; opacity: 0.7;">Motion Design</p>
+                                <h4 style="color: #fff; margin: 0; font-size: 22px;">Movida</h4>
                             </div>
                         </div>
-                        <!-- .portfolio-hover end -->
                     </div>
-                    <!-- .portfolio-img end -->
+                    <div style="padding: 18px 0;">
+                        <p style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #999; margin-bottom: 6px;">Motion Design</p>
+                        <h4 style="margin: 0 0 6px; font-size: 18px; color: #1a1a1a;">Movida</h4>
+                        <p style="font-size: 13px; color: #666; margin: 0;">Motion design das telas e campanhas da marca em todo o Brasil.</p>
+                    </div>
+                </a>
             </div>
-            <!-- .portfolio-item end -->
 
-            <!-- Portfolio Item #5 -->
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item filter-building">
-                    <div class="portfolio--img">
-                        <img src="assets/images/portfolio/constructions/5.png" alt="portfolio image" />
-                        <div class="portfolio--hover">
-                            <div class="portfolio--meta">
-                                <div class="portfolio--zoom"><a class="img-gallery-item" href="assets/images/portfolio/constructions/full/5.png"></a></div>
-								<h6><a href="#">Motion Flyer Milena Telhado</a></h6>
+            <!-- Case 4: VW × BMB Agronomous -->
+            <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item" style="margin-bottom: 30px;">
+                <a href="case-vw-bmb.html" style="text-decoration: none; display: block;">
+                    <div class="portfolio--img" style="position: relative; overflow: hidden;">
+                        <img src="assets/images/portfolio/cases/vw-bmb.jpg" alt="Case VW × BMB" style="width: 100%; display: block;" />
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent 60%); opacity: 0; transition: opacity 0.4s; display: flex; align-items: flex-end; padding: 24px;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+                            <div>
+                                <p style="color: #fff; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 6px; opacity: 0.7;">Direção Criativa</p>
+                                <h4 style="color: #fff; margin: 0; font-size: 22px;">VW × BMB Agronomous</h4>
                             </div>
                         </div>
-                        <!-- .portfolio-hover end -->
                     </div>
-                    <!-- .portfolio-img end -->
+                    <div style="padding: 18px 0;">
+                        <p style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #999; margin-bottom: 6px;">Direção Criativa</p>
+                        <h4 style="margin: 0 0 6px; font-size: 18px; color: #1a1a1a;">VW × BMB Agronomous</h4>
+                        <p style="font-size: 13px; color: #666; margin: 0;">Design visual do Constellation 31.280 Agronomous para o Grupo VAMOS.</p>
+                    </div>
+                </a>
             </div>
-            <!-- .portfolio-item end -->
 
-            <!-- Portfolio Item #6 -->
-            <div class="col-xs-12 col-sm-4 col-md-4 portfolio-item filter-building">
-                    <div class="portfolio--img">
-                        <img src="assets/images/portfolio/constructions/6.png" alt="portfolio image" />
-                        <div class="portfolio--hover">
-                            <div class="portfolio--meta">
-                                <div class="portfolio--zoom"><a class="img-gallery-item" href="assets/images/portfolio/constructions/full/6.png"></a></div>
-								<h6><a href="#">Motion Flyer Festa Sorria</a></h6>
+            <!-- Case 5: Kovi -->
+            <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item" style="margin-bottom: 30px;">
+                <a href="case-kovi.html" style="text-decoration: none; display: block;">
+                    <div class="portfolio--img" style="position: relative; overflow: hidden;">
+                        <img src="assets/images/portfolio/cases/kovi.jpg" alt="Case Kovi" style="width: 100%; display: block;" />
+                        <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.85), transparent 60%); opacity: 0; transition: opacity 0.4s; display: flex; align-items: flex-end; padding: 24px;" onmouseover="this.style.opacity=1" onmouseout="this.style.opacity=0">
+                            <div>
+                                <p style="color: #fff; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 6px; opacity: 0.7;">Identidade Visual</p>
+                                <h4 style="color: #fff; margin: 0; font-size: 22px;">Kovi × Uber</h4>
                             </div>
                         </div>
-                        <!-- .portfolio-hover end -->
                     </div>
-                    <!-- .portfolio-img end -->
+                    <div style="padding: 18px 0;">
+                        <p style="font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #999; margin-bottom: 6px;">Identidade Visual</p>
+                        <h4 style="margin: 0 0 6px; font-size: 18px; color: #1a1a1a;">Kovi × Uber</h4>
+                        <p style="font-size: 13px; color: #666; margin: 0;">Identidade visual da campanha Black Friday Kovi em parceria com a Uber.</p>
+                    </div>
+                </a>
             </div>
-             <!-- .portfolio-item end -->
+
         </div>
-        <!-- .row end -->
     </div>
-    <!-- .container end -->
 </section>
-<!-- #portfolio1 end -->
+<!-- #portfolio end -->
+
 
  <!-- skills
 ============================================= -->
